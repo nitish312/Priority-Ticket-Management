@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet" href = "style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet"> 
+    <title>Priority Ticket Management</title>
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <div class= "ticket-filter">
+                <div class= "filter Pink"></div> 
+                <div class= "filter Green"></div>
+                <div class= "filter Blue"></div>
+                <div class= "filter Black"></div>
+            </div>
+            <input type="text" class="Search-bar" onkeyup="searchtickets()" placeholder="Search with Ticket ID">
+            <div class ="ticket-action">
+                <div class= "open-modal">
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class= "close-modal">
+                    <i class="fas fa-trash-alt"></i>
+                </div>
+            </div>
+        </div>
+        <div class="ticket-container">
+        </div>
+    </div>
+    <script src ="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/short-unique-id@latest/dist/short-unique-id.min.js"></script>
+    <script>
+      let uid = new ShortUniqueId();
+    </script>
+</body>
+</html>
